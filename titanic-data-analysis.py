@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import copy
 import plotly.express as px
-from titanic_ai_model import get_model
+from scripts.titanic_ai_model import get_model
 
 
 def clean_data(df):
@@ -117,7 +117,7 @@ if 'df_filtrado' not in st.session_state:
 
 
 st.header('Datos de pasajeros del Titanic 🚢')
-data = './titanic-train.csv'
+data = './data/titanic-train.csv'
 st.session_state['df'] = get_data(data)
 
 
@@ -125,7 +125,7 @@ def page_1():
     st.subheader('🚢 - Descripción de datos')
     with  st.expander("Descripción"):
         st.markdown(
-            open(r'./titanic-data-analysis.html').read(),
+            open(r'./data/titanic-data-analysis.html').read(),
             unsafe_allow_html=True
 
         )
