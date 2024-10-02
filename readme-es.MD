@@ -84,7 +84,3 @@ Sigue estos pasos para clonar y ejecutar la aplicación en tu máquina local:
 ## 🌟 Valor del proyecto
 
 Este proyecto no solo sirve como una herramienta educativa para explorar datos históricos, sino que también pone en práctica conceptos clave de **análisis de datos**, **Machine Learning**, y **desarrollo de aplicaciones web** con **Streamlit**. La simplicidad y elegancia de Streamlit nos permite crear potentes herramientas interactivas sin salir del entorno de Python, lo que lo convierte en una solución ideal para científicos de datos que desean compartir sus hallazgos de manera accesible.
-
-## 🚀 Despliegue en Streamlit Cloud
-
-Esta aplicación puede ser desplegada fácilmente en [Streamlit Cloud](https://streamlit.io/cloud) para compartirla con otros. Solo necesitas enlazar el repositorio de GitHub y Streamlit Cloud se encargará del resto.
