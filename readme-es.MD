@@ -1,13 +1,14 @@
 # Titanic Data Analysis with Streamlit 🚢
 
-![Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
 ![GitHub Repo stars](https://img.shields.io/github/stars/MrEhDev/Titanic-data-analysis?style=social)
 ![GitHub forks](https://img.shields.io/github/forks/MrEhDev/Titanic-data-analysis?style=social)
+👉[![Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://mrehdev-titanic-data-analysis.streamlit.app/)👈
 
 ¡Bienvenido a un análisis interactivo y visual del legendario conjunto de datos del **Titanic**! 🌊 Este proyecto te permite explorar factores clave que influyeron en la supervivencia de los pasajeros de manera dinámica y sencilla, todo desarrollado con **Streamlit**, una potente herramienta de Python que facilita la creación de aplicaciones web interactivas sin complicaciones.
 
-![Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)
+Puedes probar la aplicación online:  
+👉 [Aplicación online](https://mrehdev-titanic-data-analysis.streamlit.app/)👈
 
 ## 🔍 Descripción del proyecto
 
@@ -39,6 +40,50 @@ Incluye un **clasificador de Machine Learning** que predice la supervivencia de 
 ### 🌐 Visualización de Tablas
 Se ofrece una tabla interactiva que permite explorar los datos de los pasajeros, con opciones para filtrar y ordenar según diferentes criterios.
 
+
+## 🌟 Valor del proyecto
+
+Este proyecto no solo sirve como una herramienta educativa para explorar datos históricos, sino que también pone en práctica conceptos clave de **análisis de datos**, **Machine Learning**, y **desarrollo de aplicaciones web** con **Streamlit**. La simplicidad y elegancia de Streamlit nos permite crear potentes herramientas interactivas sin salir del entorno de Python, lo que lo convierte en una solución ideal para científicos de datos que desean compartir sus hallazgos de manera accesible.
+
+## 📈 Variables del conjunto de datos del Titanic
+
+| Variable  | Descripción                                | Valores Clave              |
+|-----------|--------------------------------------------|----------------------------|
+| `survival`| Supervivencia                               | 0 = No, 1 = Sí             |
+| `pclass`  | Clase del billete                           | 1 = 1ª, 2 = 2ª, 3 = 3ª     |
+| `sex`     | Género                                      |                            |
+| `age`     | Edad                                        |                            |
+| `sibsp`   | Nº de hermanos/esposos a bordo              |                            |
+| `parch`   | Nº de padres/hijos a bordo                  |                            |
+| `fare`    | Tarifa del billete                          |                            |
+| `embarked`| Puerto de embarque                          | C = Cherburgo, Q = Queenstown, S = Southampton |
+
+## 📷 Screenshots
+
+1. **Visionado de Datos**:
+
+![](./data/capture-data.png)
+
+2. **Filtrado de Datos**:
+
+![](./data/capture-data-filter.png)
+
+3. **Análisis de Datos**:
+
+![](./data/capture-analysis.png)
+![](./data/capture-analysis2.png)
+
+4. **Predicción de supervivencia mediante IA**:
+
+![](./data/ia-prediction.png)
+
+## 🔧 Tecnologías Utilizadas
+
+- **Streamlit**: Para la creación de la interfaz web interactiva.
+- **Pandas**: Manejo de datos estructurados.
+- **Scikit-learn**: Implementación del modelo de Machine Learning.
+- **Matplotlib / Seaborn**: Visualización de datos a través de gráficos.
+
 ## 📦 Instalación y Ejecución
 
 Sigue estos pasos para clonar y ejecutar la aplicación en tu máquina local:
@@ -60,27 +105,3 @@ Sigue estos pasos para clonar y ejecutar la aplicación en tu máquina local:
 
 4. **Abre la aplicación** en tu navegador en la siguiente dirección: `http://localhost:8501`
 
-## 🔧 Tecnologías Utilizadas
-
-- **Streamlit**: Para la creación de la interfaz web interactiva.
-- **Pandas**: Manejo de datos estructurados.
-- **Scikit-learn**: Implementación del modelo de Machine Learning.
-- **Matplotlib / Seaborn**: Visualización de datos a través de gráficos.
-- **HTML/CSS**: Para personalizar la tabla y otros componentes visuales.
-
-## 📈 Variables del conjunto de datos del Titanic
-
-| Variable  | Descripción                                | Valores Clave              |
-|-----------|--------------------------------------------|----------------------------|
-| `survival`| Supervivencia                               | 0 = No, 1 = Sí             |
-| `pclass`  | Clase del billete                           | 1 = 1ª, 2 = 2ª, 3 = 3ª     |
-| `sex`     | Género                                      |                            |
-| `age`     | Edad                                        |                            |
-| `sibsp`   | Nº de hermanos/esposos a bordo              |                            |
-| `parch`   | Nº de padres/hijos a bordo                  |                            |
-| `fare`    | Tarifa del billete                          |                            |
-| `embarked`| Puerto de embarque                          | C = Cherburgo, Q = Queenstown, S = Southampton |
-
-## 🌟 Valor del proyecto
-
-Este proyecto no solo sirve como una herramienta educativa para explorar datos históricos, sino que también pone en práctica conceptos clave de **análisis de datos**, **Machine Learning**, y **desarrollo de aplicaciones web** con **Streamlit**. La simplicidad y elegancia de Streamlit nos permite crear potentes herramientas interactivas sin salir del entorno de Python, lo que lo convierte en una solución ideal para científicos de datos que desean compartir sus hallazgos de manera accesible.
