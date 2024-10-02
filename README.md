@@ -1,8 +1,11 @@
 # Titanic Data Analysis with Streamlit 🚢
 
-Welcome to an interactive and visual analysis of the famous **Titanic dataset**! 🌊 This project allows you to explore key factors that influenced passenger survival dynamically and effortlessly, all developed with **Streamlit**, a powerful Python tool that simplifies the creation of interactive web applications.
-
 ![Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
+![GitHub Repo stars](https://img.shields.io/github/stars/MrEhDev/Titanic-data-analysis?style=social)
+![GitHub forks](https://img.shields.io/github/forks/MrEhDev/Titanic-data-analysis?style=social)
+
+Welcome to an interactive and visual analysis of the famous **Titanic dataset**! 🌊 This project allows you to explore key factors that influenced passenger survival dynamically and effortlessly, all developed with **Streamlit**, a powerful Python tool that simplifies the creation of interactive web applications.
 
 ## 🔍 Project Overview
 
