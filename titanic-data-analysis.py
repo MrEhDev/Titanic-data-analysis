@@ -123,16 +123,14 @@ st.session_state['df'] = get_data(data)
 
 def page_1():
     st.subheader('🚢 - Descripción de datos')
+    
+    st.write(st.session_state['df'])
+
     with  st.expander("Descripción"):
         st.markdown(
             open(r'./data/titanic-data-analysis.html').read(),
             unsafe_allow_html=True
-
         )
-    with  st.expander("Dataframe"):
-        st.write(st.session_state['df'])
-    with  st.expander("Panda describe"):
-        st.write(st.session_state['df'].describe())
     
 
 def page_2():
@@ -276,7 +274,7 @@ def page_2():
 
 def page_3():
     st.subheader('🤖 - Predicción de supervivencia mediante Inteligencia artificial')
-    model= get_model
+    model = get_model()
     
     with st.form("prediction form"):
     
@@ -302,20 +300,20 @@ def page_3():
                     
         with col_pred_2:
             parch_input = st.number_input(
-                    "Hijos embarcados",
+                    "Padres o hijos embarcados",
                     min_value = 0,
                     max_value = 10,
                     )
                     
             fare_input = st.number_input(
-                    "Tarifa",
+                    "Tarifa pagada",
                     min_value = 0.0,
                     max_value = 1000.0,
                     )
         
         with col_pred_3:        
             sex_input = st.toggle(
-                    "Sexo",
+                    "Sexo hombre",
                     )
                     
             q_input = st.toggle(
@@ -326,7 +324,7 @@ def page_3():
                     "Embarcado en Southhampton",
                     )
 
-            submit_prediction = st.form_submit_button("Predecir")
+            submit_prediction = st.form_submit_button("Submit prediction")
         
         if submit_prediction:
             
@@ -345,19 +343,20 @@ def page_3():
 
             if y_pred:
                 
-                st.success("¡Es probable que el pasajero sobreviva!")
+                st.success("¡Es probable que el pasajero haya sobrevivido!")
                 
             else:
                 
-                st.error("Es probable que el pasajero muera...")
+                st.error("Es probable que el pasajero muriera...")
+
 
 pg = st.navigation(
-    {'D&A': [
+    {'Datos y Análisis': [
         st.Page(page_1, title= 'Descripción de datos', icon='🚢'),
         st.Page(page_2, title='Análisis de datos',icon='📈'),
     ],
     'AI':[
-        st.Page(page_3, title= 'Inteligencia artificial', icon='🤖')
+        st.Page(page_3, title= 'Predicción mediante IA', icon='🤖')
 
     ]
     }
