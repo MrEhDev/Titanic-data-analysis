@@ -1,12 +1,15 @@
 # Titanic Data Analysis with Streamlit 🚢
 
-![Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
 ![GitHub Repo stars](https://img.shields.io/github/stars/MrEhDev/Titanic-data-analysis?style=social)
 ![GitHub forks](https://img.shields.io/github/forks/MrEhDev/Titanic-data-analysis?style=social)
 [![Spanish README](https://img.shields.io/badge/README-Español-red.svg)](https://github.com/MrEhDev/Titanic-data-analysis/blob/main/readme-es.MD)
+👉[![Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://mrehdev-titanic-data-analysis.streamlit.app/)👈
 
 Welcome to an interactive and visual analysis of the famous **Titanic dataset**! 🌊 This project allows you to explore key factors that influenced passenger survival dynamically and effortlessly, all developed with **Streamlit**, a powerful Python tool that simplifies the creation of interactive web applications.
+
+You can try out the application live here:  
+👉 [Live App on Streamlit](https://mrehdev-titanic-data-analysis.streamlit.app/)👈
 
 ## 🔍 Project Overview
 
@@ -38,6 +41,44 @@ This application includes a **Machine Learning classifier** that predicts passen
 ### 🌐 Data Table Visualization
 An interactive table lets you explore passenger data with options to filter and sort by different criteria.
 
+## 📈 Titanic Dataset Variables
+
+| Variable  | Definition                                 | Key Values                  |
+|-----------|--------------------------------------------|-----------------------------|
+| `survival`| Survival                                   | 0 = No, 1 = Yes             |
+| `pclass`  | Ticket class                               | 1 = 1st, 2 = 2nd, 3 = 3rd   |
+| `sex`     | Gender                                     |                             |
+| `age`     | Age                                        |                             |
+| `sibsp`   | Number of siblings/spouses aboard          |                             |
+| `parch`   | Number of parents/children aboard          |                             |
+| `fare`    | Fare                                       |                             |
+| `embarked`| Port of embarkation                        | C = Cherbourg, Q = Queenstown, S = Southampton |
+
+## 🌟 Project Value
+
+This project not only serves as an educational tool for exploring historical data but also applies key concepts in **data analysis**, **Machine Learning**, and **web application development** with **Streamlit**. The simplicity and elegance of Streamlit allow us to create powerful interactive tools while staying entirely within the Python environment, making it an ideal solution for data scientists looking to share their findings in an accessible way.
+
+## 📷 Screenshots
+
+1. **Data Viewing**:
+![](./data/capture-data.png)
+
+2. **Data Filtering**:
+![](./data/capture-data-filter.png)
+
+3. **Data Analysis**:
+![](./data/capture-analysis.png)
+![](./data/capture-analysis2.png)
+
+4. **Survival Prediction Using AI**:
+![](./data/ia-prediction.png)
+
+## 🔧 Technologies Used
+
+- **Streamlit**: For building the interactive web interface.
+- **Pandas**: For handling structured data.
+- **Scikit-learn**: For the Machine Learning model implementation.
+- **Matplotlib / Seaborn**: For data visualization through graphs.
 ## 📦 Installation and Usage
 
 Follow these steps to clone and run the application locally:
@@ -58,30 +99,5 @@ Follow these steps to clone and run the application locally:
    ```
 
 4. **Open the app** in your browser at the following address: `http://localhost:8501`
-
-## 🔧 Technologies Used
-
-- **Streamlit**: For building the interactive web interface.
-- **Pandas**: For handling structured data.
-- **Scikit-learn**: For the Machine Learning model implementation.
-- **Matplotlib / Seaborn**: For data visualization through graphs.
-- **HTML/CSS**: For customizing the table and other visual components.
-
-## 📈 Titanic Dataset Variables
-
-| Variable  | Definition                                 | Key Values                  |
-|-----------|--------------------------------------------|-----------------------------|
-| `survival`| Survival                                   | 0 = No, 1 = Yes             |
-| `pclass`  | Ticket class                               | 1 = 1st, 2 = 2nd, 3 = 3rd   |
-| `sex`     | Gender                                     |                             |
-| `age`     | Age                                        |                             |
-| `sibsp`   | Number of siblings/spouses aboard          |                             |
-| `parch`   | Number of parents/children aboard          |                             |
-| `fare`    | Fare                                       |                             |
-| `embarked`| Port of embarkation                        | C = Cherbourg, Q = Queenstown, S = Southampton |
-
-## 🌟 Project Value
-
-This project not only serves as an educational tool for exploring historical data but also applies key concepts in **data analysis**, **Machine Learning**, and **web application development** with **Streamlit**. The simplicity and elegance of Streamlit allow us to create powerful interactive tools while staying entirely within the Python environment, making it an ideal solution for data scientists looking to share their findings in an accessible way.
 
 
